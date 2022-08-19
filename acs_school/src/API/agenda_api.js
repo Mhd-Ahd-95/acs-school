@@ -5,7 +5,7 @@ const { BaseUrl, headers } = global.api
 
 const AgendaAPI = axios.create({
     baseURL: `${BaseUrl}/agenda`,
-    headers: headers
+    headers: headers 
 })
 
 export const createAgenda = (payload) => AgendaAPI.post('', payload)
